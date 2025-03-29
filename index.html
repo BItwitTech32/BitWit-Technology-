@@ -1,115 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitwit Technologies - Your Tech Partner</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            animation: fadeIn 2s ease-in-out;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #1c1c1c;
-            padding: 10px;
-        }
-        nav a {
-            color: #00d4ff;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-        nav a:hover {
-            color: #ff7b00;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .service {
-            background: #222;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 212, 255, 0.3);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .service:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.5);
-        }
-        footer {
-            background: #1e3c72;
-            text-align: center;
-            padding: 15px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    <title>BitWit Technologies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
-        Bitwit Technologies - Elevate Your Tech Experience
+        <img src="logo-png.png" alt="BitWit Technologies Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#ticket">Raise Ticket</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    
+    <section id="home">
+        <h1>Welcome to BitWit Technologies</h1>
+        <p>Your trusted IT staffing partner.</p>
+    </section>
+    
     <section id="services">
-        <h2>Our Expert Services</h2>
-        <div class="services">
-            <div class="service"><h3>🛠️ Hardware Support</h3></div>
-            <div class="service"><h3>💾 Software Support</h3></div>
-            <div class="service"><h3>🔐 Network & Security</h3></div>
-            <div class="service"><h3>🎨 Application & Web Design</h3></div>
-            <div class="service"><h3>☁️ Cloud Support</h3></div>
-            <div class="service"><h3>🖥️ Server Support</h3></div>
-            <div class="service"><h3>🛡️ Cybersecurity</h3></div>
-            <div class="service"><h3>💻 Programming & Bug Fixing</h3></div>
-        </div>
+        <h2>Our Services</h2>
+        <p>Providing IT staffing, consulting, and solutions.</p>
     </section>
-    <section id="ticket">
-        <h2>🚀 Raise a Support Ticket</h2>
-        <p>Facing an issue? Let us help you with our expert support system.</p>
+    
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What services do you offer?</summary>
+            <p>We provide IT staffing, project consulting, and managed IT solutions.</p>
+        </details>
+        <details>
+            <summary>How can we contact you?</summary>
+            <p>Email: bitwittechnologies@gmail.com</p>
+            <p>Phone: 8602891449</p>
+        </details>
     </section>
-    <section id="contact">
-        <h2>📞 Contact Us</h2>
-        <p>Phone: <strong>8602891449</strong></p>
-        <p>Email: <strong>bitwittechnologies@gmail.com</strong></p>
-    </section>
-    <form name="contact" method="POST" data-netlify="true">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-</form>
-
+    
     <footer>
-        <p>&copy; 2025 Bitwit Technologies. All rights reserved.</p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61574447537204">Facebook</a></li>
+            <li><a href="https://www.instagram.com/bitwittechnology/">Instagram</a></li>
+            <li><a href="https://github.com/BItwitTech32">GitHub</a></li>
+            <li><a href="https://x.com/Bitwittech">Twitter (X)</a></li>
+            <li><a href="https://www.youtube.com/@BitWitTechnologies">YouTube</a></li>
+            <li><a href="https://wa.me/message/XCSX6JR2EGPIC1">WhatsApp</a></li>
+        </ul>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
